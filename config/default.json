@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "Movie Bus",
+    "port": 3000,
+    "portS": 8443
+  },
+  "web-pack": {
+    "public-path": "/dist",
+    "minimize-css": false
+  }
+}

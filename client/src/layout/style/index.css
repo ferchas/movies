@@ -1,0 +1,23 @@
+/**
+/** first set
+/**************************/
+
+@import './base/_reset.css';
+@import './base/_vars.css';
+
+/**
+/** Components
+/**************************/
+
+/* First Mobile */
+
+@import '../../components/header/style/_header__small.css';
+
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  @import '../../components/header/style/_header__medium.css';
+}
+
+@media only screen and (min-width: 1280px) {
+  @import '../../components/header/style/_header__large.css';
+}

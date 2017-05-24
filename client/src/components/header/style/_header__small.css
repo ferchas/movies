@@ -1,0 +1,78 @@
+
+header {
+  padding: 4.5em 0 1em 0;
+
+	.logo {
+		display: inline-block;
+
+		h1 {
+			background: #ff4486;
+			color: #fff;
+			border-radius: 6px;
+			font-family: 'Oleo Script', serif;
+			font-weight: 400;
+			padding: 0.25em 0.2em 0.25em 0.2em;
+			font-size: 3.25em;
+			letter-spacing: 0.05em;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		span {
+			font-weight: 800;
+			line-height: 4.5em;
+			letter-spacing: 0.025em;
+			font-size: 0.9em;
+			vertical-align: middle;
+			margin: 0 0 0 1.25em;
+		}
+	}
+
+  nav {
+    display: inline-block;
+    font-size: 0.9em;
+    float: right;
+
+    ul {
+      li {
+        float: left;
+        line-height: 4.5em;
+        padding-left: 1.5em;
+
+        a, span {
+          @include vendor('transition', 'background-color .25s ease-in-out');
+          font-weight: 800;
+          letter-spacing: 0.025em;
+          color: #696969;
+          text-decoration: none;
+          border-radius: 6px;
+          padding: 0.5em 1em 0.5em 1em;
+        }
+
+        > ul {
+          display: none;
+        }
+
+        &:hover {
+          a, span {
+            background: #fff;
+          }
+        }
+
+        &.active {
+          a, span {
+            background: #fff;
+          }
+        }
+
+        &.current {
+          a {
+            background: #444;
+            color: #fff;
+          }
+        }
+      }
+    }
+  } /* End Nav */
+
+}
