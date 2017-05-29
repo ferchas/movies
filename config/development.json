@@ -3,14 +3,14 @@
     "name": "Movie Bus",
     "port": 3000,
     "portS": 8443,
-    "scope": "default"
+    "scope": "development"
   },
   "web-pack": {
     "public-path": "/dist",
-    "minimize-css": true
+    "minimize-css": false
   },
   "bundle": {
-    "js": "bundle.[name].[hash].js",
-    "css": "bundle.[name].[hash].css"
+    "js": "bundle.[name].js",
+    "css": "bundle.[name].css"
   }
 }

@@ -2,6 +2,7 @@
 /* Function show lis */
 const listMovies = (req, res) => {
   // res.render('movies', { title: 'Express' });
+  console.log('index');
 };
 
 const movies = {

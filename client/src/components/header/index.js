@@ -17,7 +17,7 @@ class Header extends React.Component {
 
           <nav>
             <ul>
-              <li class="current"><a href="index.html">Welcome</a></li>
+              <li className="current"><a href="index.html">Welcome</a></li>
               <li>
                 <a href="#">Dropdown</a>
                 <ul>

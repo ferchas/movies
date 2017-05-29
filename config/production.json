@@ -3,7 +3,7 @@
     "name": "Movie Bus",
     "port": 3000,
     "portS": 8443,
-    "scope": "default"
+    "scope": "production"
   },
   "web-pack": {
     "public-path": "/dist",

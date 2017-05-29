@@ -9,22 +9,22 @@ module.exports = {
     app: './client/src/index.js',
   },
   output: {
-    filename: 'bundle.[name].[hash].js',
+    filename: config.get('bundle.js'),
     path: 'public/dist',
     publicPath: config.get('web-pack.public-path'),
   },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production'),
+        NODE_ENV:  JSON.stringify(config.get('app.scope')),
       },
     }),
     new HtmlWebpackPlugin({ // include bundles into html. Defined in entry
       filename: 'index.html',
-      template: './client/src/layout/layout.html',
+      template: './client/src/layout/index.html',
     }),
     new ExtractTextPlugin({
-      filename: 'bundle.[name].[hash].css',
+      filename: config.get('bundle.css'),
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
